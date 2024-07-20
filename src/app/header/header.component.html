@@ -1,0 +1,12 @@
+<h3>Option Number # {{numberOption}}</h3>
+<ul class="options">
+  @for (option of options; track option.id) {
+
+  <li class="option{{ option.id }}">
+    <a href="{{ option.path }}" (click)="setNumberOption(option.id)">
+      {{ option.name }}
+    </a>
+  </li>
+
+  }
+</ul>
